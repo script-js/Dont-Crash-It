@@ -1,0 +1,27 @@
+#back {
+  width:101%;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:0;
+}
+
+#overlay {
+  width:101%;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:1;
+}
+
+#dashboard {
+  width:101%;
+  position:absolute;
+  left:0;
+  bottom:0;
+  z-index:3;
+}
+
+#obstacles div {
+  z-index: 2;
+}
