@@ -4,7 +4,7 @@ function createOB() {
   newob.src = array[Math.floor(Math.random() * array.length)]
   newob.id = "ob" + Math.ceil(Math.floor(Math.random() * 1000))
   newob.width = "100";
-  newOB.classList = "obstacle";
+  newob.classList = "obstacle";
   obstacles.appendChild(newob)
   var elem = document.getElementById(newob.id)
   elem.interval = setInterval(function() {
