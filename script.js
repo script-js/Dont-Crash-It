@@ -1,3 +1,5 @@
+var moveint;
+
 function createOB() {
   var newob = document.createElement("img")
   var array = ["src/obstacles/"]
@@ -14,5 +16,19 @@ function createOB() {
       elem.remove()
       clearInterval(elem.interval)
     }
+  },1)
+}
+
+function viewMove(dir) {
+  moveint = setInterval(function() {
+    var elemList = obstacles.querySelector(".obstacle")
+      Object.keys(elemList).forEach(function (k) {
+        if (dir == "l") {
+      var nval = parseInt(elemList[k].style.left) + 1
+    } else if (dir == "r") {
+      var nval = parseInt(elemList[k].style.left) - 1
+    }
+        elemList[k].style.left = nval + "px";
+      })
   },1)
 }
