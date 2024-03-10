@@ -25,3 +25,7 @@
 #obstacles * {
   z-index: 2;
 }
+
+.obstacle {
+  position: absolute;
+}
